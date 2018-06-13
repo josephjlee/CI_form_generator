@@ -2,17 +2,23 @@
     <?php
 
     $tableau = [
-    
-    //you can use a post or get method
-    //in form action put the name of your function in the controller
-    
-        'form_method'=>'post','form_action'=>'receiver',
+        'form_method'=>'get','form_action'=>'receiver',
 
-        'username_id'=>'id1','username_placeholder'=>'ph1','username_name'=>'n1',
+        'username_id'=>'id1','username_placeholder'=>'example@email.com','username_name'=>'n1',
 
-        'password_id'=>'id2','password_placeholder'=>'ph2','password_name'=>'n2'
+        'password_id'=>'id2','password_placeholder'=>'password','password_name'=>'n2'
                 ];
 
-        echo customizable_login_form_generator($tableau);
+    ?>
+
+     <div style="font-family: Corbel ;width: 300px;
+         height: 250px; margin: auto; border-radius: 3px; box-shadow: 2px 2px 5px #00CC00;
+          position: relative; top: 50%;transform: translateY(-50%);">
+
+         <?= customizable_login_form_generator($tableau);  ?>
+
+     </div>
+
+    <?php
 
     ?>
