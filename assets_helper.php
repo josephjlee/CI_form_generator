@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: davy
+ * User: 45developer
  * Date: 6/12/2018
  * Time: 10:24 AM
  */
@@ -37,7 +37,9 @@ function customizable_login_form_generator($info_array)
             <input type="password" required="" name="'.$info_array['password_name'].'" class="form-control" id="'.$info_array['password_id'].'" placeholder="'.$info_array['password_placeholder'].'">
         </div>
 
+<p style="text-align: center;">
         <button type="submit" class="btn btn-primary">Submit</button>
+        </p>
     </form>
 
 </div>
