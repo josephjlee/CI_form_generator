@@ -26,15 +26,15 @@ function customizable_login_form_generator($info_array)
 
 
 <div class="container">
-    <form action="'.$info_array['f_f_action'].'" method="'.$info_array['f_f_method'].'">
+    <form action="'.$info_array['form_action'].'" method="'.$info_array['form_method'].'">
         <div class="form-group">
-            <label for="'.$info_array['f_f_id1'].'">Username:</label>
-            <input type="email" class="form-control" name="'.$info_array['f_f_name1'].'" id="'.$info_array['f_f_id1'].'" aria-describedby="emailHelp" placeholder="'.$info_array['f_f_placeholder1'].'">
+            <label for="'.$info_array['username_id'].'">Username:</label>
+            <input type="email" class="form-control" name="'.$info_array['username_name'].'" id="'.$info_array['username_id'].'" aria-describedby="emailHelp" placeholder="'.$info_array['username_placeholder'].'">
             <small id="emailHelp" class="form-text text-muted">Make sure it\'s a valid email.</small>
         </div>
         <div class="form-group">
-            <label for="'.$info_array['s_f_id2'].'">Password:</label>
-            <input type="password" name="'.$info_array['s_f_name2'].'" class="form-control" id="'.$info_array['s_f_id2'].'" placeholder="'.$info_array['s_f_placeholder2'].'">
+            <label for="'.$info_array['password_id'].'">Password:</label>
+            <input type="password" name="'.$info_array['password_name'].'" class="form-control" id="'.$info_array['password_id'].'" placeholder="'.$info_array['password_placeholder'].'">
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
