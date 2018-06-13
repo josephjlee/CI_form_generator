@@ -29,12 +29,12 @@ function customizable_login_form_generator($info_array)
     <form action="'.$info_array['form_action'].'" method="'.$info_array['form_method'].'">
         <div class="form-group">
             <label for="'.$info_array['username_id'].'">Username:</label>
-            <input type="email" class="form-control" name="'.$info_array['username_name'].'" id="'.$info_array['username_id'].'" aria-describedby="emailHelp" placeholder="'.$info_array['username_placeholder'].'">
+            <input type="email" required="" class="form-control" name="'.$info_array['username_name'].'" id="'.$info_array['username_id'].'" aria-describedby="emailHelp" placeholder="'.$info_array['username_placeholder'].'">
             <small id="emailHelp" class="form-text text-muted">Make sure it\'s a valid email.</small>
         </div>
         <div class="form-group">
             <label for="'.$info_array['password_id'].'">Password:</label>
-            <input type="password" name="'.$info_array['password_name'].'" class="form-control" id="'.$info_array['password_id'].'" placeholder="'.$info_array['password_placeholder'].'">
+            <input type="password" required="" name="'.$info_array['password_name'].'" class="form-control" id="'.$info_array['password_id'].'" placeholder="'.$info_array['password_placeholder'].'">
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
