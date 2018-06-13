@@ -17,8 +17,11 @@ class Personal extends CI_Controller
     }
     public function receiver()
     {
+    //retrieve the values from the form
         $var=$this->input->get('n1');
         $var2=$this->input->get('n2');
+        
+    //print out the values ...
         echo 'These are the values from the form\'s page <br> username: '.$var.' <br> password: '.$var2;
     }
 }
