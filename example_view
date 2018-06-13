@@ -12,7 +12,7 @@
     ?>
 
      <div style="font-family: Corbel ;width: 300px;
-         height: 250px; margin: auto; border-radius: 3px; box-shadow: 2px 2px 5px #00CC00;
+         height: 250px; margin: auto; border-radius: 3px; box-shadow: 2px 2px 5px #5b9dcc;
           position: relative; top: 50%;transform: translateY(-50%);">
 
          <?= customizable_login_form_generator($tableau);  ?>
