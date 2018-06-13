@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * Created by PhpStorm.
+ * User: 45developer
+ * Date: 6/12/2018
+ * Time: 9:57 AM
+ */
+class Personal extends CI_Controller
+{
+    ... other functions ....
+    
+    public function login_page()
+    {
+        $this->load->helper('assets');
+        $this->load->view('example_view');
+    }
+    public function receiver()
+    {
+        $var=$this->input->get('n1');
+        $var2=$this->input->get('n2');
+        echo 'These are the values from the form\'s page <br> username: '.$var.' <br> password: '.$var2;
+    }
+}
