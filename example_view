@@ -2,6 +2,10 @@
     <?php
 
     $tableau = [
+    
+    //you can use a post or get method
+    //in form action put the name of your function in the controller
+    
         'form_method'=>'post','form_action'=>'receiver',
 
         'username_id'=>'id1','username_placeholder'=>'ph1','username_name'=>'n1',
