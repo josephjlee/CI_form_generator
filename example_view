@@ -1,0 +1,14 @@
+
+    <?php
+
+    $tableau = [
+        'form_method'=>'post','form_action'=>'receiver',
+
+        'username_id'=>'id1','username_placeholder'=>'ph1','username_name'=>'n1',
+
+        'password_id'=>'id2','password_placeholder'=>'ph2','password_name'=>'n2'
+                ];
+
+        echo customizable_login_form_generator($tableau);
+
+    ?>
